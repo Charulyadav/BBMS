@@ -1,0 +1,177 @@
+/* Sidebar styles */
+.sidebar-heading {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 20px; /* Adjust the margin as needed */
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #4040404; /* Background color for the sidebar */
+    color: white; /* Text color */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: white; /* Adjusted text color */
+    display: block;
+    padding: 10px 20px;
+    border: 3px solid transparent;
+}
+
+.sidebar a:hover {
+    background-color: #808080; /* Hover background color */
+    border-color: #ff9999;
+}
+
+        /* Styles for buttons */
+            .btn-primary {
+                    background-color: #28a745; /* Change background color */
+                    color: #fff;
+                    border: none;
+                    padding: 8px 20px; /* Adjust padding for larger button */
+                    border-radius: 6px; /* Adjust border radius for a rounded button */
+                    cursor: pointer;
+                    transition: background-color 0.3s;
+                    font-size: 16px; /* Adjust font size */
+                }
+
+                .btn-primary:hover {
+                    background-color: #218838; /* Darken the background color on hover */
+                }
+
+                /* Adjust space between button and table */
+                .user-details .btn-primary {
+                    margin-bottom: 20px; /* Add some space below the button */
+                }
+
+
+        /* Styles for Add Agent Modal form */
+            #addModal .modal-body {
+                padding: 20px;
+            }
+
+            #addModal label {
+                font-weight: bold;
+            }
+
+            #addModal input[type="text"],
+            #addModal input[type="date"],
+            #addModal input[type="tel"],
+            #addModal select {
+                width: 100%; /* Make inputs fill the container width */
+                padding: 10px;
+                margin-bottom: 10px; /* Add some space between inputs */
+                box-sizing: border-box;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+
+            #addModal textarea {
+                width: 100%; /* Make textarea fill the container width */
+                padding: 10px;
+                margin-bottom: 10px; /* Add some space between textarea and other inputs */
+                box-sizing: border-box;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+
+            #addModal input[type="text"]:focus,
+            #addModal input[type="date"]:focus,
+            #addModal input[type="tel"]:focus,
+            #addModal textarea:focus,
+            #addModal select:focus {
+                outline: none;
+                border-color: #007bff;
+            }
+
+            #addModal .form-group {
+                margin-bottom: 20px;
+            }
+
+            #addModal .modal-footer {
+                border-top: none;
+                padding-top: 0;
+            }
+
+            #addModal .modal-footer button {
+                margin-right: 10px;
+            }
+
+            .remark-container {
+                display: flex;
+                align-items: center;
+            }
+
+            .remark-input {
+                margin-right: 10px; /* Adjust the margin as needed */
+            }
+
+            .user-details img {
+                width: 150px; /* Adjust the size of the profile photo */
+                height: 150px; /* Adjust the height if needed */
+                border-radius: 50%; /* Make the photo round */
+                display: block;
+                margin: 0 auto 20px; /* Center the photo and provide space below */
+                object-fit: cover; /* Ensure the photo covers the entire space */
+                border: 3px solid #fff; /* Add a white border around the image */
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+            }
+
+.deleteBtn, .addBtn {
+    background-color:#dc3545; /* This will be overridden for .addBtn below */
+    color: white;
+    border: none;
+    padding: 10px 20px; /* Increase padding for larger buttons */
+    font-size: 16px; /* Increase font size */
+    cursor: pointer;
+    border-radius: 5px; /* Add border radius for rounded corners */
+}
+
+.deleteBtn:hover {
+    background-color: darkred;
+}
+
+.addBtn {
+    background-color: #4F7942;
+}
+
+.addBtn:hover {
+    background-color: darkgreen;
+}
+
+.accept-request-btn, .reject-request-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.reject-request-btn {
+    background-color: #dc3545;
+}
+
+.accept-request-btn:hover, .reject-request-btn:hover {
+    opacity: 0.8; 
+}
